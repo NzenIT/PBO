@@ -1,0 +1,326 @@
+BAB 1
+PENGENALAN PEMROGRAMAN BERORIENTASI OBJEK (OOP)
+
+1.1 Pengertian OOP
+OOP (Object Oriented Programming) adalah metode pemrograman yang berorientasi pada objek.
+
+Keuntungan OOP:
+
+* Program lebih terstruktur.
+* Memudahkan debugging.
+* Mengurangi penulisan kode berulang (DRY / Don't Repeat Yourself).
+
+---
+
+1.2 Class
+
+Class adalah blueprint atau cetakan untuk membuat object.
+
+Contoh:
+
+class Mahasiswa {
+
+}
+
+Analogi:
+
+* Class = Cetakan rumah
+* Object = Rumah yang sudah dibangun
+
+---
+
+1.3 Object
+
+Object adalah hasil dari class.
+
+Contoh:
+
+Mahasiswa mhs = new Mahasiswa();
+
+Keterangan:
+
+* Mahasiswa = Class
+* mhs = Object
+* new = Membuat object baru
+
+---
+
+1.4 Field (Atribut)
+
+Field adalah variabel yang berada di dalam class.
+
+Contoh:
+
+class Mahasiswa{
+String nama;
+String nim;
+}
+
+Field:
+
+* nama
+* nim
+
+Fungsi:
+Menyimpan data milik object.
+
+---
+
+1.5 Method
+
+Method adalah fungsi atau prosedur yang berada di dalam class.
+
+Contoh:
+
+class Persegi{
+
+```
+int panjang = 10;
+int lebar = 5;
+
+void luas(){
+    System.out.println(panjang * lebar);
+}
+```
+
+}
+
+Pemanggilan:
+
+Persegi p = new Persegi();
+p.luas();
+
+---
+
+1.6 Method Return
+
+Method dapat mengembalikan nilai menggunakan keyword return.
+
+Contoh:
+
+int luas(){
+return panjang * lebar;
+}
+
+Pemanggilan:
+
+System.out.println(luas());
+
+---
+
+1.7 Method Parameter
+
+Parameter digunakan untuk mengirim data ke dalam method.
+
+Contoh:
+
+int luas(int p, int l){
+return p * l;
+}
+
+Pemanggilan:
+
+luas(5,4);
+
+Hasil:
+20
+
+---
+
+1.8 Keyword this
+
+Keyword this digunakan untuk mengakses field milik class.
+
+Contoh:
+
+class Mahasiswa{
+
+```
+String nama;
+
+void setNama(String nama){
+    this.nama = nama;
+}
+```
+
+}
+
+Keterangan:
+
+* this.nama = field class
+* nama = parameter method
+
+==================================================
+
+BAB 2
+KONSEP DASAR OOP
+
+==================================================
+
+2.1 Access Modifier
+
+Access Modifier digunakan untuk mengatur hak akses field maupun method.
+
+Jenis Access Modifier:
+
+a. Public
+Dapat diakses dari luar class.
+
+b. Private
+Hanya dapat diakses di dalam class itu sendiri.
+
+c. Protected
+Dapat diakses oleh class turunan (subclass).
+
+---
+
+2.2 Encapsulation
+
+Encapsulation adalah proses menyembunyikan data menggunakan private dan mengaksesnya melalui getter dan setter.
+
+Contoh:
+
+private int umur;
+
+public void setUmur(int umur){
+this.umur = umur;
+}
+
+public int getUmur(){
+return umur;
+}
+
+Keuntungan:
+
+* Data lebih aman.
+* Data lebih terkontrol.
+* Mengurangi kesalahan perubahan data.
+
+---
+
+2.3 Constructor
+
+Constructor adalah method khusus yang otomatis dijalankan saat object dibuat.
+
+Contoh:
+
+class Mahasiswa{
+
+```
+String nama;
+
+public Mahasiswa(String nama){
+    this.nama = nama;
+}
+```
+
+}
+
+Pemanggilan:
+
+Mahasiswa m = new Mahasiswa("Nayaka");
+
+Fungsi:
+Memberikan nilai awal pada object.
+
+==================================================
+
+BAB 3
+RANGKUMAN PERTEMUAN 1
+
+==================================================
+
+3.1 Istilah Penting
+
+OOP
+= Pemrograman Berbasis Objek
+
+Class
+= Cetakan / Blueprint
+
+Object
+= Hasil dari Class
+
+Field
+= Variabel dalam Class
+
+Method
+= Fungsi dalam Class
+
+Parameter
+= Data yang dikirim ke Method
+
+Return
+= Nilai yang dikembalikan Method
+
+this
+= Mengakses field milik Class
+
+Public
+= Bisa diakses dari luar Class
+
+Private
+= Hanya bisa diakses dalam Class
+
+Encapsulation
+= Private + Getter + Setter
+
+Constructor
+= Method khusus yang berjalan saat object dibuat
+
+==================================================
+
+BAB 4
+PERSIAPAN SEBELUM MASUK KELAS
+
+==================================================
+
+4.1 Pertanyaan yang Mungkin Ditanyakan Dosen
+
+Apa itu OOP?
+Jawab:
+OOP adalah metode pemrograman yang berorientasi pada objek.
+
+Apa itu Class?
+Jawab:
+Class adalah blueprint atau cetakan untuk membuat object.
+
+Apa itu Object?
+Jawab:
+Object adalah hasil nyata dari class yang dapat digunakan dalam program.
+
+Apa itu Field?
+Jawab:
+Field adalah variabel yang berada di dalam class.
+
+Apa itu Method?
+Jawab:
+Method adalah fungsi atau prosedur yang berada di dalam class.
+
+Apa itu Encapsulation?
+Jawab:
+Encapsulation adalah proses menyembunyikan data menggunakan private dan mengaksesnya melalui getter dan setter.
+
+Apa itu Constructor?
+Jawab:
+Constructor adalah method khusus yang otomatis dijalankan saat object dibuat.
+
+==================================================
+
+CHECKLIST BELAJAR
+
+[v] Paham OOP
+[v] Paham Class
+[v] Paham Object
+[ ] Paham Field
+[ ] Paham Method
+[ ] Paham Return
+[ ] Paham Parameter
+[ ] Paham this
+[ ] Paham Access Modifier
+[ ] Paham Encapsulation
+[ ] Paham Constructor
+
+Jika semua checklist sudah dipahami, maka dasar OOP untuk pertemuan pertama sudah cukup kuat.
+
+SEMANGAT SEMESTER 3 🚀
